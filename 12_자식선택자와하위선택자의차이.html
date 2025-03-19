@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 자식 선택자 */
+    /* ul 태그의 자식이면서 li 태그인 요소를 선택 */
+    /* ul > li {
+      color: orange;
+    } */
+    /* 하위 선택자 */
+    /* ul 태그의 자손이면서 li 태그인 요소를 선택 */
+    ul li {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <ul>
+      <li>사과</li>
+      <li>딸기</li>
+      <li>오렌지</li>
+      <ol>
+        <!-- 4번째 li는 ul 태그의 직계자식이 아님 -->
+        <!-- 4번째 li는 ul 태그의 자손 -->
+        <li> ul 안에 ol 리스트</li>
+      </ol>
+    </ul>
+    <div>당근</div>
+    <p>토마토</p>
+    <span>오렌지</span>
+  </div>
+  <span>오렌지</span>
+
+</body>
+</html>

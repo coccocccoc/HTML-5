@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 태그 선택자 */
+    div {
+      border: 1px solid;
+      padding: 10px;
+    }
+    /* 자식 선택자 */
+    ul>li {
+      color: green;
+    }
+    ol>li {
+      color: orange;
+    }
+    /* 형제 선택자 */
+    up+p {
+      color: gray;
+    }
+    ol+p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>과일 목록</h3>
+    <ul>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>포도</li>
+      <li>오렌지</li>
+    </ul>
+    <p>과일은 자연에서 자라며, 다양한 맛과 영양소를 포함하고 있습니다</p>
+  </div>
+  <div>
+    <h3>채소 목록</h3>
+      <ol type="1">
+        <li>브로콜리</li>
+        <li>당근</li>
+        <li>양배추</li>
+        <li>오이</li>
+      </ol>
+      <p>채소는 건강에 좋고, 다양한 요리에 활용됩니다.</p>
+  </div>
+</body>
+</html>
