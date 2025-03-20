@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      border: 2px solid black;
+    }
+    th, td {
+      border: 1px solid gray;
+      padding: 10px 10px ;
+      text-align: left;
+    }
+    #button, h2 {
+      text-align: center;
+    }
+    [type="text"] {
+      color: green;
+    }
+    [type="email"]{
+      color: blue;
+    }
+    [type="password"]{
+      color: red;
+    }
+    .bc:focus{
+      background-color: orange;
+      border: 1px solid black;
+    }
+    [type="radio"]:active{
+      color: purple;
+    }
+    button:active {
+      background-color: navy;
+      color: white;
+    }
+    
+  </style>
+</head>
+<body>
+  <form action="">
+    <table>
+        <h2>회원가입</h2>
+      <tr>
+        <th>이름</th>
+        <td><input type="text" placeholder="이름 입력" class="bc"></td>
+      </tr>
+      <tr>
+        <th>이메일</th>
+        <td><input type="email" placeholder="이메일 입력" class="bc"></td>
+      </tr>
+      <tr>
+        <th>비밀번호</th>
+        <td><input type="password" placeholder="비밀번호 입력" class="bc"></td>
+      </tr>
+      <tr>
+        <th>성별</th>
+        <td>
+          <input type="radio" name="gender" id="man">
+          <label for=man"">남성</label>
+
+          <input type="radio" name="gender" id="woman">
+          <label for="woman">여성</label>
+          
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" id="button"><button>가입하기</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

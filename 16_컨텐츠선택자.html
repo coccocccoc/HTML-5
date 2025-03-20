@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 컨텐츠 선택자 */
+    /* div 태그에 컨텐츠 추가 */
+    /* ::before : 기존 컨텐츠 앞에 '앞!'을 추가 */
+    div::before {
+      content: '앞!';
+      color: red;
+    }
+    /* ::after : 기존 컨텐츠 뒤에 '뒤!'를 추가 */
+    div::after {
+      content: '뒤!';
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div>Content!</div>
+</body>
+</html>

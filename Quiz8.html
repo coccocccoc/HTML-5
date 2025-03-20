@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      /* 너비를 화면의 50%로 설정 */
+      width: 50%;
+    }
+    th, td {
+      border: 1px solid;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    /* table 태그 아래 첫번째 행 선택 */
+    /* 하위 선택자 + 구조 선택자 */
+    table tr:first-child {
+      background-color: grey;
+    }
+    /* table 태그 아래 짝수번째 행 선택 */
+    table tr:nth-child(even) {
+      background-color: gainsboro;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 6행 -->
+  <table>
+    <tr>
+      <th>이름</th>
+      <th>과목</th>
+      <th>점수</th>
+    </tr>
+    <tr>
+      <td>홍길동</td>
+      <td>수학</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>김영희</td>
+      <td>영어</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>박철수</td>
+      <td>과학</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>이지은</td>
+      <td>국어</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>최민호</td>
+      <td>사회</td>
+      <td>81</td>
+    </tr>
+  </table>
+  
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+
+    div{
+      border: 1px solid;
+      text-align: center;
+      padding: 10px 10px;
+      width: 400px;
+    }
+    #event {
+      color: orange;
+    }
+    #name {
+      color: purple;
+    }
+    #date {
+      color: green;
+    }
+    .input:focus {
+      background-color: beige;
+      border: 1px solid black;
+    }
+    [type="checkbox"] {
+      color: brown;
+    }
+    button:active {
+      border: 3px solid black;
+      background-color: lightgray;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div>
+    <h3>이벤트 등록</h3>
+    <p>
+      <label for="" id="event">이벤트명</label>
+      <input type="text" class="input">
+    </p>
+    <p>
+      <label for="" id="name">주최자명</label>
+      <input type="text" class="input">
+    </p>
+    <p>
+      <label for="" id="date">이벤트 날짜</label>
+      <input type="date">
+    </p>
+    <p>
+      <label for="">이벤트 유형</label>
+      <input type="">
+    </p>
+    <span>참여 가능 연령대</span>
+    <br>
+    <input type="checkbox" id="check1">
+    <label for="check1">10대</label>
+    <input type="checkbox" id="check2">
+    <label for="check2">20대</label>
+    <input type="checkbox" id="check3">
+    <label for="check3">30대</label>
+    <input type="checkbox" id="check4">
+    <label for="check4">40대 이상</label>
+    <p>
+      <button>등록하기</button>
+    </p>
+    
+
+
+  </div>
+  
+</body>
+</html>

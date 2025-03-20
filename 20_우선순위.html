@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- !important > style 속성 > 아이디 선택자 > 클래스 선택자 > 태그 선택자 -->
+  <style>
+    div { /* 태그 선택자 */
+      color: red !important; /* 플래그가 우선 적용됨 */
+    }
+    #color_yellow { /* 아이디 선택자 */
+      color: yellow;
+    }
+    .color_green { /* 클래스 선택자 */
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <!-- 스타일 우선순위 -->
+  <div id="color_yellow" class="color_green" style="color: orange;">
+    Hello World!
+  </div>
+</body>
+</html>
